@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 380px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.form-box {
+  padding: 40px;
+  text-align: center;
+}
+
+.form-box h1 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input-field input:focus {
+  border-color: #2575fc;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+p a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.btn-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.disable {
+  background: #ccc;
+  color: #333;
+}
+
+button:hover:not(.disable) {
+  background: #1b5fd1;
+}
